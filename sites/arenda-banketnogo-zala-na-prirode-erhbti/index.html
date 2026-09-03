@@ -14,7 +14,7 @@
 <meta property="og:description" content="Аренда банкетного зала на природе — rent.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://leadgen-site.loca.lt/photo_1.jpg">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Аренда банкетного зала на природе", "description": "Наша компания специализируется на организации свадеб в уникальных локациях. Мы предлагаем аренду банкетного зала на природе с прозрачным куполом и полным спектром услуг для организации вашего особого дня. Наш опытный персонал поможет вам спланировать и провести вашу свадьбу на высоком уровне."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Аренда банкетного зала на природе", "description": "Наша компания специализируется на организации свадеб в уникальных локациях. Мы предлагаем аренду банкетного зала на природе с прозрачным куполом и полным спектром услуг для организации вашего особого дня. Наш опытный персонал поможет вам спланировать и провести вашу свадьбу на высоком уровне."}window.addEventListener("scroll",function(){var h=document.getElementById("hdr");if(h)h.classList.toggle("scrolled",window.scrollY>20);},{passive:true});</script>
 <style>
 :root{--acc:#3498db;--acc2:#3498db;--soft:color-mix(in srgb,var(--acc) 7%,#fff);--ink:#131316;--mut:#5f6268;--mut2:#9a9da3;--line:#e8e8ea;--bg:#ffffff;--bg2:#f7f7f8;--grad:linear-gradient(120deg,var(--acc),var(--acc2));--r-sm:10px;--r-md:16px;--r-lg:24px;--sh-sm:0 1px 2px rgba(19,19,22,.05);--sh-md:0 12px 32px rgba(19,19,22,.07);--sh-lg:0 24px 64px rgba(19,19,22,.10);--font:'Manrope','Segoe UI',system-ui,-apple-system,Arial,sans-serif;--serif:'Playfair Display',Georgia,'Times New Roman',serif}
 
@@ -242,10 +242,18 @@ h1{font-size:clamp(1.85rem,8.5vw,2.4rem)}
 .steps{grid-template-columns:1fr 1fr;gap:36px 22px}
 .contacts{margin-bottom:0}
 }
+
+.orbs{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.18;animation:orb-float 18s ease-in-out infinite}
+.orb-1{width:600px;height:600px;background:var(--acc);top:-12%;left:-8%;animation-delay:0s}
+.orb-2{width:500px;height:500px;background:var(--acc2);bottom:-15%;right:-10%;animation-delay:-6s}
+.orb-3{width:350px;height:350px;background:var(--acc);top:40%;right:20%;animation-delay:-12s;opacity:.1}
+@keyframes orb-float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(40px,-30px) scale(1.05)}66%{transform:translate(-25px,20px) scale(.95)}}
+header.scrolled{box-shadow:0 8px 30px rgba(0,0,0,.08)}
 </style>
 </head>
-<body class="theme-dark layout-editorial">
-<header>
+<body class="theme-dark layout-editorial"><div class="orbs"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+<header id="hdr">
 <div class="nav">
 <div class="logo"><span class="logo-dot"></span>Аренда банкетного зала на природе</div>
 <nav class="menu" id="menu"><a href="#services">Услуги и цены</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a><a href="#faq">Вопросы</a><a href="#benefits">Почему мы</a><a href="#guarantees">Гарантии</a></nav>
@@ -268,8 +276,8 @@ if(b&&m){b.addEventListener('click',function(){b.classList.toggle('open');m.clas
 document.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){b.classList.remove('open');m.classList.remove('open');});});}
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.1});
 document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});})();
-</script>
+window.addEventListener("scroll",function(){var h=document.getElementById("hdr");if(h)h.classList.toggle("scrolled",window.scrollY>20);},{passive:true});</script>
 <script>(function(){var u=location.origin+'/api/track?slug='+encodeURIComponent((location.pathname.split('/')[2]||''))+'&r='+encodeURIComponent(document.referrer||'');if(navigator.sendBeacon){navigator.sendBeacon(u);}else{new Image().src=u;}})();
-</script>
+window.addEventListener("scroll",function(){var h=document.getElementById("hdr");if(h)h.classList.toggle("scrolled",window.scrollY>20);},{passive:true});</script>
 </body>
 </html>

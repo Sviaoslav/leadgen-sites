@@ -14,7 +14,7 @@
 <meta property="og:description" content="Охранник — охрана.">
 <meta property="og:type" content="website">
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Охранник", "description": "Охранник — охрана. Приглaшaем на pаботу охранникa. Обязaнноcти: Контрoль пpoпуcкнoгo peжимa."}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Охранник", "description": "Охранник — охрана. Приглaшaем на pаботу охранникa. Обязaнноcти: Контрoль пpoпуcкнoгo peжимa."}window.addEventListener("scroll",function(){var h=document.getElementById("hdr");if(h)h.classList.toggle("scrolled",window.scrollY>20);},{passive:true});</script>
 <style>
 :root{--acc:#0ea5e9;--acc2:#0284c7;--ink:#17171a;--mut:#5b5e66;--mut2:#a8abb3;--line:#e9e4dc;--bg:#ffffff;--bg2:#faf7f1;--soft:color-mix(in srgb,var(--acc) 8%,#fff);--soft2:color-mix(in srgb,var(--acc2) 10%,#fff);--grad:linear-gradient(135deg,var(--acc),var(--acc2));--r-sm:12px;--r-md:18px;--r-lg:26px;--sh-sm:0 1px 2px rgba(23,23,26,.05);--sh-md:0 14px 38px rgba(23,23,26,.08);--sh-lg:0 30px 80px rgba(23,23,26,.13);--font:'Manrope','Segoe UI',system-ui,-apple-system,Arial,sans-serif;--serif:'Playfair Display',Georgia,'Times New Roman',serif;--glow:0 0 0 1px color-mix(in srgb,var(--acc) 18%,transparent),0 14px 40px color-mix(in srgb,var(--acc) 22%,transparent)}
 
@@ -230,10 +230,18 @@ h1{font-size:clamp(1.9rem,8.5vw,2.4rem)}
 .steps{grid-template-columns:1fr 1fr;gap:36px 22px}
 .contacts{margin-bottom:0}
 }
+
+.orbs{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.18;animation:orb-float 18s ease-in-out infinite}
+.orb-1{width:600px;height:600px;background:var(--acc);top:-12%;left:-8%;animation-delay:0s}
+.orb-2{width:500px;height:500px;background:var(--acc2);bottom:-15%;right:-10%;animation-delay:-6s}
+.orb-3{width:350px;height:350px;background:var(--acc);top:40%;right:20%;animation-delay:-12s;opacity:.1}
+@keyframes orb-float{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(40px,-30px) scale(1.05)}66%{transform:translate(-25px,20px) scale(.95)}}
+header.scrolled{box-shadow:0 8px 30px rgba(0,0,0,.08)}
 </style>
 </head>
-<body class="theme-light layout-classic">
-<header>
+<body class="theme-light layout-classic"><div class="orbs"><div class="orb orb-1"></div><div class="orb orb-2"></div><div class="orb orb-3"></div></div>
+<header id="hdr">
 <div class="nav">
 <div class="logo"><span class="logo-dot"></span>Охранник</div>
 <nav class="menu" id="menu"><a href="#services">Услуги и цены</a><a href="#steps">Как работаем</a><a href="#works">Работы</a><a href="#about">О нас</a><a href="#reviews">Отзывы</a><a href="#contacts">Контакты</a></nav>
@@ -256,8 +264,8 @@ if(b&&m){b.addEventListener('click',function(){b.classList.toggle('open');m.clas
 document.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){b.classList.remove('open');m.classList.remove('open');});});}
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.1});
 document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});})();
-</script>
+window.addEventListener("scroll",function(){var h=document.getElementById("hdr");if(h)h.classList.toggle("scrolled",window.scrollY>20);},{passive:true});</script>
 <script>(function(){var u=location.origin+'/api/track?slug='+encodeURIComponent((location.pathname.split('/')[2]||''))+'&r='+encodeURIComponent(document.referrer||'');if(navigator.sendBeacon){navigator.sendBeacon(u);}else{new Image().src=u;}})();
-</script>
+window.addEventListener("scroll",function(){var h=document.getElementById("hdr");if(h)h.classList.toggle("scrolled",window.scrollY>20);},{passive:true});</script>
 </body>
 </html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>РемонтПро — Ремонт квартир</title>
+<meta name="description" content="РемонтПро — Ремонт квартир в Москва"><meta property="og:title" content="РемонтПро — Ремонт квартир"><meta property="og:description" content="РемонтПро — Ремонт квартир в Москва"><meta property="og:type" content="website"><meta property="og:image" content="https://sviaoslav.github.io/leadgen-sites/photo_1.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "РемонтПро", "description": "РемонтПро — Ремонт квартир в Москва", "telephone": "++74951234567", "address": {"@type": "PostalAddress", "addressLocality": "Москва"}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',system-ui,sans-serif;color:#2d3436;background:#faf9f6;line-height:1.6}
+a{color:inherit;text-decoration:none}
+/* HERO — photo with soft blend */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background-size:cover;background-position:center;background-image:url('photo_1.jpg');background-size:cover;background-position:center;}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(250,249,246,.85) 0%,rgba(250,249,246,.3) 40%,rgba(250,249,246,.85) 100%)}
+.hero-content{position:relative;z-index:1;text-align:center;max-width:1000px;margin:0 auto;padding:120px 28px 80px;width:100%}
+.hero h1{font-family:'Fraunces',serif;font-size:clamp(2.4rem,5vw,3.6rem);font-weight:600;letter-spacing:-.02em;line-height:1.12;margin-bottom:20px;color:#2d3436}
+.hero p{font-size:1.05rem;color:#636e72;max-width:440px;margin:0 auto 28px}
+.points{list-style:none;display:flex;gap:24px;justify-content:center;margin-bottom:32px;flex-wrap:wrap}
+.points li{font-size:.92rem;color:#636e72;display:flex;align-items:center;gap:8px}
+.points li::before{content:"●";color:#00b894;font-size:.5rem}
+.cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 32px;border-radius:50px;font-size:.95rem;font-weight:600;transition:all .25s}
+.btn-green{background:#00b894;color:#fff}
+.btn-green:hover{background:#00a381;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,184,148,.25)}
+.btn-outline{border:1.5px solid #b2bec3;color:#2d3436}
+.btn-outline:hover{border-color:#00b894;color:#00b894}
+section{padding:100px 0}
+.sec-title{text-align:center;margin-bottom:50px}
+.sec-title h2{font-family:'Fraunces',serif;font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:600;margin-bottom:10px}
+.sec-title p{color:#636e72;font-size:1rem}
+.benefits{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:900px;margin:0 auto}
+.b{padding:28px;background:#fff;border-radius:20px;border:1px solid #eee;transition:all .3s}
+.b:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(0,184,148,.08)}
+.b h3{font-family:'Fraunces',serif;font-size:1.1rem;font-weight:600;margin-bottom:8px;color:#2d3436}
+.b p{color:#636e72;font-size:.88rem}
+.services{max-width:680px;margin:0 auto}
+.sv{padding:24px 0;border-bottom:1px solid #eee}
+.sv:last-child{border-bottom:none}
+.sv h3{font-family:'Fraunces',serif;font-size:1.05rem;font-weight:600;margin-bottom:4px}
+.sv p{color:#636e72;font-size:.88rem}
+.sp{color:#00b894;font-weight:600;margin-top:6px}
+/* GALLERY — earthy blend */
+.gallery-section{position:relative;padding:100px 0;background:linear-gradient(180deg,#faf9f6 0%,#f0ede6 50%,#faf9f6 100%)}
+.gallery{columns:3;column-gap:12px;padding:0 28px;max-width:1000px;margin:0 auto}
+.gi{break-inside:avoid;margin-bottom:12px;border-radius:16px;overflow:hidden}
+.gi img{width:100%;display:block;aspect-ratio:4/3;object-fit:cover;transition:transform .6s}
+.gi:hover img{transform:scale(1.04)}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;max-width:900px;margin:0 auto}
+.rv{padding:28px;background:#fff;border-radius:20px;border:1px solid #eee}
+.rv p{font-size:.92rem;color:#636e72;margin-bottom:14px;font-style:italic}
+.rn{font-size:.82rem;color:#00b894;font-weight:500}
+.cta-section{position:relative;padding:120px 0;text-align:center;overflow:hidden}
+.cta-section::before{content:'';position:absolute;inset:0;background-size:cover;background-position:center;opacity:.2;background-image:url('photo_1.jpg');background-size:cover;background-position:center;}
+.cta-section::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,184,148,.9),rgba(0,206,201,.9))}
+.cta-section>*{position:relative;z-index:1}
+.cta-section h2{font-family:'Fraunces',serif;font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:14px;color:#fff}
+.cta-section p{color:rgba(255,255,255,.85);margin-bottom:28px}
+.cta-section .btn{background:#fff;color:#00b894}
+.cta-section .btn:hover{background:#f0fff4}
+footer{padding:40px 0;text-align:center;color:#b2bec3;font-size:.82rem}
+@media(max-width:768px){.benefits{grid-template-columns:1fr}.points{flex-direction:column;align-items:center}.gallery{columns:2}}
+@media(max-width:480px){.gallery{columns:1}}
+</style>
+</head>
+<body>
+<section class="hero"><div class="hero-content">
+<h1>Профессиональный ремонт квартир под ключ</h1>
+<p>Выполняем ремонт квартир любой сложности в Москве.</p>
+<ul class="points"><li>Работаем без предоплаты</li><li>Гарантия 2 года</li><li>Сроки от 14 дней</li></ul>
+<div class="cta">
+<a class="btn btn-green" href="https://wa.me/+74951234567" target="_blank">Написать в WhatsApp</a>
+<a class="btn btn-outline" href="tel:++74951234567">Позвонить</a>
+</div></div></section>
+
+<section id='benefits'><div class='container' style='max-width:900px;margin:0 auto;padding:0 28px'><div class='sec-title'><h2>Наши преимущества</h2></div><div class='benefits'><div class="b"><h3>Без предоплаты</h3><p>Оплата по факту выполнения работ</p></div><div class="b"><h3>Гарантия 2 года</h3><p>На все виды работ</p></div></div></div></section>
+<section id='services'><div class='container' style='max-width:680px;margin:0 auto;padding:0 28px'><div class='sec-title'><h2>Услуги и цены</h2></div><div class='services'><div class="sv"><h3>Косметический ремонт</h3><p>Покраска, обои, пол</p><div class="sp">от 3 500 ₽/м²</div></div><div class="sv"><h3>Капитальный ремонт</h3><p>Перепланировка, инженерные сети</p><div class="sp">от 8 000 ₽/м²</div></div></div></div></section>
+<section class='gallery-section' id='gallery'><div class='sec-title' style='padding:0 28px'><h2>Наши работы</h2></div><div class="gallery gallery-3"><div class="gi gi-0"><img src="photo_2.jpg" alt="" loading="lazy"></div><div class="gi gi-1"><img src="photo_3.jpg" alt="" loading="lazy"></div><div class="gi gi-2"><img src="photo_4.jpg" alt="" loading="lazy"></div></div></section>
+<section id='reviews'><div class='container' style='max-width:900px;margin:0 auto;padding:0 28px'><div class='sec-title'><h2>Отзывы клиентов</h2></div><div class='reviews'><div class="rv"><p>"Сделали ремонт за 18 дней, очень довольны"</p><div class="rn">— Алексей, Москва</div></div></div></div></section>
+
+<section class="cta-section" id="contacts"><h2>Свяжитесь с нами</h2><p>Ответим в течение дня</p>
+<div class="cta"><a class="btn" href="https://wa.me/+74951234567" target="_blank">Написать в WhatsApp</a><a class="btn btn-outline" href="tel:++74951234567" style="border-color:rgba(255,255,255,.5);color:#fff">+7 495 123-45-67</a></div></section>
+
+<footer>© 2026 РемонтПро</footer>
+<a href="https://wa.me/+74951234567" target="_blank" rel="noopener" style="position:fixed;bottom:24px;right:24px;background:#25D366;color:#fff;padding:16px 28px;border-radius:50px;font-size:17px;font-weight:700;text-decoration:none;z-index:9999;box-shadow:0 6px 24px rgba(37,211,102,0.4);transition:transform .2s" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform='none'">💬 Написать в WhatsApp</a><a href="tel:++74951234567" style="position:fixed;bottom:80px;right:24px;background:#fff;color:#333;padding:14px 22px;border-radius:50px;font-size:15px;font-weight:600;text-decoration:none;z-index:9999;box-shadow:0 4px 16px rgba(0,0,0,0.12);border:1px solid #e5e5e5">📞 +7 495 123-45-67</a>
+</body></html>
